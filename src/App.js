@@ -4,6 +4,7 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import { Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import Hero from './components/Hero';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -24,7 +25,7 @@ function App() {
           columnSpacing={{ xs: 1, sm: 2, md: 7 }}
         >
           <Grid item xs={8}>
-            <Item>Hero</Item>
+            <Hero />
           </Grid>
           <Grid item xs={6}>
             <Item>xs=6</Item>

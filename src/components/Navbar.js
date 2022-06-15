@@ -1,4 +1,5 @@
 import * as React from 'react';
+import '../styles/navbar.css';
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -156,7 +157,7 @@ function Navbar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position='static'>
+      <AppBar className='appbar' position='static'>
         <Toolbar>
           <IconButton
             size='large'
